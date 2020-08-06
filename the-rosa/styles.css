@@ -216,7 +216,19 @@ header{
     font-size: 1.2rem;
     color: var(--secondary-font-color);
     margin: 0 1.6rem;
+
+    opacity: 0;
+    animation: spin .5s forwards;
+    animation-delay: .7s;
 }
+
+.single-animation{
+    opacity: 0;
+    animation: fadeDown .5s forwards;
+    animation-delay: 1.5s;
+
+}
+
 .headline-description h5{
     color: #fff;
     font-size: 1.4rem;
@@ -363,6 +375,8 @@ footer{
     color: #fff;
     font-size: 2rem;
     padding: 2rem;
+
+    animation: up 2s infinite;
 }
 
 .footer-content{
@@ -563,17 +577,47 @@ footer{
         width: 100%;
     }
 }
-
-/* Words READY TO BE OPENED */
-@keyframes grow{
+/* Spinning asterisk animation .asterisk */
+@keyframes spin{
     0%{
-        width: 0;
+        transform: rotate(0);
     }
     100%{
         opacity: 1;
-        width: 100%;
+        transform: rotate(-360deg);
+
     }
 }
+
+/* Words READY TO BE OPENED .single-animation */
+@keyframes fadeDown{
+    0%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+
+/* arrow up .back-to-top icon*/
+@keyframes up{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+}
+
+
+
 
 
 
