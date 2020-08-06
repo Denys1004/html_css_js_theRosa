@@ -298,4 +298,62 @@ header{
     align-items: center;
 }
 
+
 /* Discover our menu */
+/* ALIGNING IMAGES */
+.image-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.discover-our-menu .restaurant-description{
+    padding-top: 3rem;
+    margin-bottom: 0;
+}
+
+
+/* The perfect blend */
+.perfect-blend{
+    background: url("images/perfect-blend.jpg") center no-repeat;
+    background-size: cover;
+}
+
+
+/* footer */
+footer{
+    padding: 7.9rem;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.back-to-top{
+    width: 7rem;
+    height: 7rem;
+    background-color: #121212;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.back-to-top i{
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer-content{
+    /* overflow: hidden; */
+}
+
+.footer-content h4{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
