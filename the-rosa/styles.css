@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
     --main-font: 'Source Sans Pro', sans-serif;
     --secondary-font: 'Herr Von Muellerhoff', cursive;
@@ -16,36 +15,32 @@
     --secondary-font-color: #c59d5f;
     --body-font-color: #515151;
 }
-
 html{
     font-family: var(--body-font);
     font-size: 10px;
     color: var(--body-font-color);
     scroll-behavior: smooth;
 }
-
 section{
     padding: 3.9rem 0;
 }
-
 img{
     width: 100%;
     max-width: 100%;
 }
-
 a{
     text-decoration: none;
 }
 p{
     font-size: 1.6rem;
 }
-
 .container{
     width: 100%;
     max-width: 122.5rem;
     margin: 0 auto;
     padding: 0 2.4rem;
 }
+
 
 /* header */
 header{
@@ -56,14 +51,12 @@ header{
     z-index: 1;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
 }
-
 .nav{
     height: 7.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .menu-toggle{
     color: #fff;
     font-size: 2.2rem;
@@ -78,7 +71,6 @@ header{
 .fa-times{
     display: none;
 }
-
 .nav-list{
     list-style: none;
     position: fixed;
@@ -95,7 +87,6 @@ header{
     transform: translateX(-100%);
     transition: transform .5s;
 }
-
 .nav:before{
     content: '';
     position: fixed;
@@ -125,7 +116,6 @@ header{
 }
 /* now if you add class="open" to body in html, you will see вид как бы это выглядело когда меню открыто, 
 если удалишь класс то будет как закрытою Мы используем это в js */
-
 .nav-item{
     border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
@@ -162,7 +152,6 @@ header{
     line-height: 0.4;
     letter-spacing: 2px;
 }
-
 .first-letter{
     text-transform: uppercase;
     font-size: 10.3rem;
@@ -210,7 +199,6 @@ header{
     color: var(--secondary-font-color);
     margin: 0 1.6rem;
 }
-
 .headline-description h5{
     color: #fff;
     font-size: 1.4rem;
@@ -220,14 +208,12 @@ header{
     letter-spacing: 3px;
     margin-right: -3px;
 }
-
 .btn{
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-right: -2px;
 }
-
 .cta-btn{
     font-size: 1.1rem;
     background-color: #fff;
@@ -236,7 +222,6 @@ header{
     border-radius: .4rem;
     transition: background-color .5s;
 }
-
 .cta-btn:hover,
 .cta-btn:focus{
     color: #fff;
@@ -252,5 +237,65 @@ header{
 .discover-our-story .global-headline{
     margin-top: 6.9rem;
 }
+.global-headline .asterisk{
+    color: var(--body-font-color);
+    margin: 2.4rem 0;
+}
+.headline-dark{
+    color: var(--main-font-color-dark);
+    letter-spacing: .7rem;
+    margin-right: -.7rem;
+}
+.global-headline .sub-headline{
+    letter-spacing: -.1rem;
+    line-height: .42;
+}
+.restaurant-info{
+    text-align: center;
+}
+.restaurant-description{
+    margin-bottom: 3rem;
+}
+.restaurant-description p{
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+}
+.body-btn{
+    font-size: 1.5rem;
+    color: var(--secondary-font-color);
+    position: relative;
+    transition: color .5s;
+}
+.body-btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-font-color);
+    transition: background-color .5s;
+}
+.body-btn:hover,
+.body-btn:focus{
+    color: var(--main-font-color-dark);
+}
+.body-btn:hover::before,
+.body-btn:focus::before{
+    background-color: var(--main-font-color-dark);
+}
 
 
+
+/* Tasetfull recepies */
+.tasteful-recipes{
+    background: url("images/tasteful-recipes.jpg") center no-repeat;
+    background-size: cover;
+}
+.between{
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Discover our menu */
